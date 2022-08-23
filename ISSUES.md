@@ -1,0 +1,4 @@
+| Issue | Utility |
+| ------------- | ------------- |
+| Permission denied error on Github Push| This issue comes when there is separate git username and password in config and  I dont want to set local config explicitly.<br/> Soln : change the remote url with PAT / password <br/> https://github.com/mukeshkv9007/my_git_notes.git <br/>git remote set-url origin https://mukeshkv9007:<password>@github.com/mukeshkv9007/my_git_notes.git
+|Share Without Working copy |To minimize the use of space on the remote server you<br/> create a bare repository: one which has only the .git objects and doesn't <br/>create a Working copy in the ﬁlesystem <br/> ***On the remote server:*** git init <br/>--bare /path/to/repo.git ***On the local machine:*** git remote add origin <br/> ssh://username@server:/path/to/repo.git|

@@ -1,0 +1,25 @@
+## Git basic Commands
+
+| Command                             | Utility                                                                                                                                                                                                                                    |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| git --version                       | Check Version                                                                                                                                                                                                                              |
+| which git                           | Check Git in directory wheather installed or not                                                                                                                                                                                           |
+| git status                          |                                                                                                                                                                                                                                            |
+| git add <file_name>                 |                                                                                                                                                                                                                                            |
+| git add .                           | add all                                                                                                                                                                                                                                    |
+| .gitignore                          | add those file name in this file to avoid getting added by git add . or gettinglisted by git status                                                                                                                                        |
+| git commit -m "Initial commit"      | commit changes after staging                                                                                                                                                                                                               |
+| Commenting Style for commit message | Feat– any feature <br /> Fix – bug fixes<br /> <br />Docs – changes to the documentation files like README <br /> Style – style or formatting change in css etc <br /> Perf – improves code performance <br /> Test – test case            |
+| Remote                              | Remote name = origin <br/> remote url = https://github.com/mukeshkv9007/my_git_notes.git                                                                                                                                                   |
+| Clone                               | git clone https://github.com/mukeshkv9007/my_git_notes.git <br/> **To specify a diﬀerent name of the directory, e.g. MyFolder** <br/> **_(MyFolder should be empty )_**<br/>git clone https://github.com/username/projectname.git MyFolder |
+| Clone Using SSH Version             | git clone git@github.com:username/projectname.git                                                                                                                                                                                          |
+| Adding --set-upstream (or -u )      | created an upstream (tracking) reference which is<br/> used by argument-less Git commands, e.g. git pull .                                                                                                                                 |
+|Setting your user name and email for all repositories <br/>***It has nothing to do with authentication when pushing to a remote repository***|git config --global user.name "Your Name"<br/>git config --global user.email mail@example.com|
+|Identity for a single repository, use git config inside a repo.<br/>***Settings stored in a repository's conﬁg ﬁle will take precedence over the global conﬁg when you use that repository.***|git config user.name "Your Login At Work" git config user.email mail_at_work@example.com|
+|see local email|git config --local user.email|
+|Remove a global identity|git config --global --remove-section user.name<br/>git config --global --remove-section user.email|
+|force git to look for your identity only within a repository's settings, not in the global conﬁg|git config --global user.useConfigOnly true|
+|Set Upstream if upstream exist|git remote set-url upstream https://github.com/projectusername/repo.git|
+|If the upstream is not there|git remote add upstream https://github.com/projectusername/repo.git|
+|To add a colleague's fork|git remote add mickey https://github.com/mickey/repo.git|
+|Help|git status --help git help status|
